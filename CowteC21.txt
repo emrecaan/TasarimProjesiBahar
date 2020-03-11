@@ -1,0 +1,455 @@
+Giriş Yap Ekranı
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace CowteC1
+{
+    public partial class frmGirisYap : Form
+    {
+        public frmGirisYap()
+        {
+            InitializeComponent();
+        }
+
+        private void btnHesapOl_Click(object sender, EventArgs e)
+        {
+            HesapOlustur2 frm1 = new HesapOlustur2();
+            frm1.Show();
+            this.Hide();
+        }
+
+        private void btnGiris_Click(object sender, EventArgs e)
+        {
+            CiftlikBilgisi5 frm1 = new CiftlikBilgisi5();
+            frm1.Show();
+            this.Hide();
+        }
+
+        private void linkLabel1_Click(object sender, EventArgs e)
+        {
+            SifremiUnuttum3 frm3 = new SifremiUnuttum3();
+            frm3.Show();
+            this.Hide();
+        }
+
+        private void textBox2_Click(object sender, EventArgs e)
+        {
+            textBox2.Clear();
+            textBox2.ForeColor = Color.Black;
+        }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox1.ForeColor = Color.Black;
+        }
+
+        private void textBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.ActiveControl = textBox1;
+                textBox1.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            textBox1.PasswordChar = '*';
+            
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+    }
+}
+
+
+HESAP OLUŞTUR EKRANI
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace CowteC1
+{
+    public partial class HesapOlustur2 : Form
+    {
+        public HesapOlustur2()
+        {
+            InitializeComponent();
+        }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox1.ForeColor = Color.Black;
+        }
+
+        private void textBox2_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox1.ForeColor = Color.Black;
+        }
+
+        private void textBox3_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox1.ForeColor = Color.Black;
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.ActiveControl = textBox2;
+                textBox2.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.ActiveControl = textBox3;
+                textBox3.ForeColor = Color.Black;
+            }
+        }
+
+        private void btnGdon1_Click(object sender, EventArgs e)
+        {
+            frmGirisYap frm4 = new frmGirisYap();
+            frm4.Show();
+            this.Hide();
+        }
+
+        private void btnKaydet1_Click(object sender, EventArgs e)
+        {
+            frmGirisYap frm4 = new frmGirisYap();
+            frm4.Show();
+            this.Hide();
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            textBox3.PasswordChar = '*' ;
+        }
+    }
+}
+
+ ŞİREMİ UNUTTUM
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace CowteC1
+{
+    public partial class SifremiUnuttum3 : Form
+    {
+        public SifremiUnuttum3()
+        {
+            InitializeComponent();
+        }
+
+        private void btnGdon2_Click(object sender, EventArgs e)
+        {
+            frmGirisYap frm4 = new frmGirisYap();
+            frm4.Show();
+            this.Hide();
+        }
+
+        private void btnKaydet2_Click(object sender, EventArgs e)
+        {
+            SifremiUnuttum4 frm5 = new SifremiUnuttum4();
+            frm5.Show();
+            this.Hide();
+        }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox1.ForeColor = Color.Black;
+        }
+    }
+}
+
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace CowteC1
+{
+    public partial class SifremiUnuttum4 : Form
+    {
+        public SifremiUnuttum4()
+        {
+            InitializeComponent();
+        }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox1.ForeColor = Color.Black;
+        }
+
+        private void textBox2_Click(object sender, EventArgs e)
+        {
+            textBox2.Clear();
+            textBox2.ForeColor = Color.Black;
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.ActiveControl = textBox2;
+                textBox2.ForeColor = Color.Black;
+            }
+        }
+
+        private void btnGdon3_Click(object sender, EventArgs e)
+        {
+            frmGirisYap frm6 = new frmGirisYap();
+            frm6.Show();
+            this.Hide();
+        }
+
+        private void btnKaydet3_Click(object sender, EventArgs e)
+        {
+            frmGirisYap frm6 = new frmGirisYap();
+            frm6.Show();
+            this.Hide();
+        }
+
+        private void SifremiUnuttum4_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
+
+ÇİFTLİK BİLGİSİ
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace CowteC1
+{
+    public partial class CiftlikBilgisi5 : Form
+    {
+        public CiftlikBilgisi5()
+        {
+            InitializeComponent();
+        }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox1.ForeColor = Color.Black;
+        }
+
+        private void textBox2_Click(object sender, EventArgs e)
+        {
+            textBox2.Clear();
+            textBox2.ForeColor = Color.Black;
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.ActiveControl = textBox2;
+                textBox2.ForeColor = Color.Black;
+            }
+        }
+
+        private void btnilerle1_Click(object sender, EventArgs e)
+        {
+            SaglikBilgisi6 frm7 = new SaglikBilgisi6();
+            frm7.Show();
+            this.Hide();
+        }
+    }
+}
+
+SAĞLIK BİLGİSİ
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace CowteC1
+{
+    public partial class SaglikBilgisi6 : Form
+    {
+        public SaglikBilgisi6()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SutinekBilgiGirisi7 frm8 = new SutinekBilgiGirisi7();
+            frm8.Show();
+            this.Hide();
+        }
+
+        private void textBox1_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();
+            textBox1.ForeColor = Color.Black;
+        }
+
+        private void textBox2_Click(object sender, EventArgs e)
+        {
+            textBox2.Clear();
+            textBox2.ForeColor = Color.Black;
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.ActiveControl = textBox2;
+                textBox2.ForeColor = Color.Black;
+            }
+        }
+    }
+}
+
+
+SÜT İNEKLERİ BİLGİ GİRİŞİ
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace CowteC1
+{
+    public partial class SutinekBilgiGirisi7 : Form
+    {
+        public SutinekBilgiGirisi7()
+        {
+            InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            YemlerinOnerilmesi8 frm9 = new YemlerinOnerilmesi8();
+            frm9.Show();
+            this.Hide();
+        }
+    }
+}
+
+YEMLERİN ÖNERİLMESİ
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace CowteC1
+{
+    public partial class YemlerinOnerilmesi8 : Form
+    {
+        public YemlerinOnerilmesi8()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RasyonBeklentileri9 frm13 = new RasyonBeklentileri9();
+            frm13.Show();
+            this.Hide();
+        }
+    }
+}
+
+YEMLERİN ÖNERİLMESİ
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace CowteC1
+{
+    public partial class YemlerinOnerilmesi8 : Form
+    {
+        public YemlerinOnerilmesi8()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            RasyonBeklentileri9 frm13 = new RasyonBeklentileri9();
+            frm13.Show();
+            this.Hide();
+        }
+    }
+}
